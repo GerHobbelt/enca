@@ -220,7 +220,7 @@ do_iconv_open(EncaEncoding from_enc,
   assert(from_name != NULL);
   assert(to_name != NULL);
 
-  /* Iconv_open() paramters has reverse order than we use. */
+  /* Iconv_open() parameters has reverse order than we use. */
   *icd = iconv_open(to_name, from_name);
   if (*icd != (iconv_t)-1)
     return 0;

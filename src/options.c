@@ -257,7 +257,7 @@ interpret_opt(int argc, char *argv[], int cmdl_argc)
       exit(EXIT_TROUBLE);
       break;
 
-      case ':': /* Missing paramter. */
+      case ':': /* Missing parameter. */
       fprintf(stderr, "%s: Option -%c requires an argument.\n"
                       "Run `%s --help' to get brief help.\n",
                       program_name, optopt, program_name);
