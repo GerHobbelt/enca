@@ -21,7 +21,7 @@ Version:        @PACKAGE_VERSION@
 Release:        @RELEASE@%{?dist}
 License:        GPLv2
 Group:          Applications/Text
-Source:         http://dl.cihar.com/enca/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
+Source:         https://github.com/Project-OSS-Revival/enca/releases/download/@PACKAGE_VERSION@/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
 URL:            https://github.com/nijel/@PACKAGE_TARNAME@
 Prefix:         %{_prefix}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
