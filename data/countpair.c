@@ -12,8 +12,14 @@ main(int argc, char *argv[])
   unsigned long int count[0x10000];
   FILE *f;
 
-  int i, killme, c, last;
+  unsigned long int c;
+  int i, killme, last;
   unsigned long j, sum;
+
+  if (argc < 1) {
+    fprintf(stderr, "Error: Missing arguments!\n");
+    return 0;
+  }
 
   /* read letters */
   for (i = 0; i < 0x100; i++)
@@ -32,8 +38,8 @@ main(int argc, char *argv[])
   last = FILL_CHARACTER;
   do {
     c = getchar();
-    killme = (c == EOF);
-    if (c == EOF || !letters[c])
+    killme = ((int)c == EOF);
+    if ((int)c == EOF || !letters[c])
       c = FILL_CHARACTER;
     count[last*0x100 + c]++;
     last = c;
@@ -102,9 +108,9 @@ main(int argc, char *argv[])
   i = 0;
   while (i < last) {
     c = count[2*i+1]/0x100;
-    printf("%c:", c);
+    printf("%c:", (char)c);
     while (i < last && count[2*i+1]/0x100 == c) {
-      printf("%c", count[2*i+1]%0x100);
+      printf("%c", (char)count[2*i+1]%0x100);
       i++;
     }
     printf("\n");
