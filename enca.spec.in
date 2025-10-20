@@ -35,7 +35,7 @@ tools like GNU recode (librecode), UNIX98 iconv (libiconv), perl Unicode::Map
 and cstocs.
 
 Currently, it has support for Belarusian, Bulgarian, Croatian, Czech,
-Estonian, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian,
+Estonian, Finnish, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian,
 Chinese, and some multibyte encodings (mostly variants of Unicode) independent
 on the language.
 
