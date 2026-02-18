@@ -1,5 +1,5 @@
 #============================================================================
-# Enca v1.20 (2025-07-21)  guess and convert encoding of text files
+# Enca v1.21 (2025-10-20)  guess and convert encoding of text files
 # Copyright (C) 2000-2003 David Necas (Yeti) <yeti@physics.muni.cz>
 # Copyright (C) 2009-2016 Michal Cihar <michal@cihar.com>
 #============================================================================
@@ -10,6 +10,14 @@ More detailed log can be obtained from older changelogs or git log.
 Legend: + new feature
         * change of behaviour (including disappearing of a feature)
         - bugfix
+
+enca-1.21
+  + Add support for Finnish language with CP1267 charset.
+  + Added -without-librecode to configure script
+  - Fixed --with-libiconv and --without-libiconv options
+  - Removed old travis ci link from readme.
+  - Update source path in enca.spec.in
+  - Fixed language tools build warnings and error.
 
 enca-1.20
   - fix crosscompilation issues

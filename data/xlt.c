@@ -13,6 +13,11 @@ main(int argc, char *argv[])
   int i;
   int c;
 
+  if (argc < 1) {
+    fprintf(stderr, "Error: Missing arguments!\n");
+    return 0;
+  }
+
   f = fopen(argv[1], "r");
   for (i = 0; i < 0x100; i++)
     fscanf(f, "%x", source_map + i);

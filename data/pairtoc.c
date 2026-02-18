@@ -14,8 +14,14 @@ main(int argc, char *argv[])
   unsigned int order[0x100];
   unsigned char *pairs[0x100];
   FILE *f;
-  unsigned int i, j, k;
+  unsigned int i, k;
+  long unsigned int j;
   int first, second;
+
+  if (argc < 1) {
+    fprintf(stderr, "Error: Missing arguments!\n");
+    return 0;
+  }
 
   /* read letters */
   for (i = 0; i < 0x100; i++) {
@@ -37,7 +43,7 @@ main(int argc, char *argv[])
     getchar();  /* : */
     i = 0;
     while ((second = getchar()) != '\n')
-      pairs[first][i++] = (unsigned char*)second;
+      pairs[first][i++] = second;
     pairs[first][i] = '\0';
   }
   assert(order[0] == FILL_CHARACTER);
