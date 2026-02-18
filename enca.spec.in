@@ -21,7 +21,7 @@ Version:        @PACKAGE_VERSION@
 Release:        @RELEASE@%{?dist}
 License:        GPLv2
 Group:          Applications/Text
-Source:         http://dl.cihar.com/enca/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
+Source:         https://github.com/Project-OSS-Revival/enca/releases/download/@PACKAGE_VERSION@/@PACKAGE_TARNAME@-@PACKAGE_VERSION@.tar.gz
 URL:            https://github.com/nijel/@PACKAGE_TARNAME@
 Prefix:         %{_prefix}
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -35,7 +35,7 @@ tools like GNU recode (librecode), UNIX98 iconv (libiconv), perl Unicode::Map
 and cstocs.
 
 Currently, it has support for Belarusian, Bulgarian, Croatian, Czech,
-Estonian, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian,
+Estonian, Finnish, Latvian, Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian,
 Chinese, and some multibyte encodings (mostly variants of Unicode) independent
 on the language.
 

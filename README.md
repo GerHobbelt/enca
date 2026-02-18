@@ -1,6 +1,5 @@
 # Enca - guess and convert encoding of text files
 
-[![build status](https://secure.travis-ci.org/nijel/enca.png)](https://travis-ci.org/nijel/enca)
 [![codecov.io](https://codecov.io/github/nijel/enca/coverage.svg?branch=master)](https://codecov.io/github/nijel/enca?branch=master)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/3292/badge.svg)](https://scan.coverity.com/projects/nijel-enca)
 [![Coverage Status](https://coveralls.io/repos/nijel/enca/badge.png?branch=master)](https://coveralls.io/r/nijel/enca?branch=master)
@@ -16,7 +15,7 @@ Copyright (C) 2009-2016 Michal Cihar <michal@cihar.com>
 Enca (Extremely Naive Charset Analyser) consists of two main components:
 
   * libenca, an encoding detection library.  It currently supports
-    Belarusian, Bulgarian, Croatian, Czech, Estonian, Hungarian, Latvian,
+    Belarusian, Bulgarian, Croatian, Czech, Estonian, Finnish, Hungarian, Latvian,
     Lithuanian, Polish, Russian, Slovak, Slovene, Ukrainian, Chinese, and
     some multibyte encodings independently on language.  The API should be
     relatively stable (to be read as `it will either change only
@@ -51,9 +50,7 @@ Optional features:
   configure parameters.  It is compiled in by default when found
   and considered usable.  Optionally, you can specify a DIR; libiconv
   include files will be then searched in DIR/include and the library
-  itself in DIR/lib. (The legacy `--with-iconv`/`--without-iconv` options
-  are still accepted for backward compatibility, but may be removed in a
-  future release.)
+  itself in DIR/lib.
 
 * Compilation of interface to external converter programs is controlled by
   `--enable-external`, `--disable-external`
@@ -76,6 +73,9 @@ For the impatient: Run
 
 as usual.
 
+Running Test
+
+    make test
 
 ## License
 
@@ -85,8 +85,7 @@ GNU General Public License.  Please see COPYING for details.
 
 ## Web resources
 
-Enca can be found at https://github.com/nijel/enca/, you can download 
-tarballs from https://cihar.com/software/enca/.
+Enca can be found at https://github.com/nijel/enca/
 
 
 ## Bugs
